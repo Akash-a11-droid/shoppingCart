@@ -1,0 +1,71 @@
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    word-break: break-word;
+}
+
+ul li {
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* Flex stylings for list */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li p {
+    display: inline-block;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.productImage {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.arrowButton {
+    width: 20px;
+    height: 20px;
+    background-color: yellow; /* Example background color */
+    text-align: center; /* Center text within the button */
+    display: flex; /* For easier alignment of image and text */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.arrowButton img {
+    object-fit: cover; /* Or contain, fill, none */
+    width: 80%; /* Adjust width to your preference */
+    height: 80%; /* Adjust height to your preference */
+}
+
+.productDescHidden {
+    display: none;
+}
+
+.productDescVisible {
+    display: block;
+}
+
+.addToCartButton {
+    margin-bottom: 20px;
+    background-color: green;
+    color: white; 
+    padding: 10px;
+    border-radius: 10px;  
+}
+

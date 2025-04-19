@@ -1,0 +1,30 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(255, 10, 173);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container p {
+    margin-left: 20px;
+}
+
+.cartIconButton {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.cartIconButton img {
+    border-radius: 15px;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}

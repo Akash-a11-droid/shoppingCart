@@ -1,26 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react'
-import ProductCard from './productListComponents/ProductCard';
-import Header from './productListComponents/Header';
-
+import React from "react";
+import ProductCard from "./productListComponents/ProductCard";
+import Cart from "./cartComponents/Cart";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
-    const [productsArr, setProductsArr] = useState([]);    
-
-    useEffect(()=>{
-        fetch('https://fakestoreapi.com/products')
-        .then(response => response.json())
-        .then(data => setProductsArr(data));
-    }, []);
-
-    return (
-        <div>
-            <Header />
-            <div style={{ marginTop: '65px' }}>
-              <ProductCard productsArr={productsArr}/>
-            </div>
-        </div>
-
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={ <ProductCard /> } />   
+          <Route path="/cart" element={ <Cart /> } />        
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

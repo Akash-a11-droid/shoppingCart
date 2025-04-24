@@ -1,20 +1,18 @@
-import React from 'react';
-import headerStyles from './Header.module.css';
+import React from "react";
+import headerStyles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
-  function handleClick(){
-    window.open("../cartComponents/Cart.jsx");
-  }
-
   return (
     <div className={headerStyles.container}>
-        <h1>Fake Shop</h1>
-        <button className={headerStyles.cartIconButton} onClick={handleClick}>
+      <h1>Fake Shop</h1>
+      <Link to="/cart">
+        <button className={headerStyles.cartIconButton}>
           <img src="../../cart.png" alt="Cart-Icon" />
         </button>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
 export default Header;

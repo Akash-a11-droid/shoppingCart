@@ -1,6 +1,8 @@
-body {
-    background-color: black;
+.cartWrapper {
+    margin-top: 80px;
+    color: whitesmoke;
 }
+
 
 ul {
     margin-top: 80px;
@@ -36,7 +38,7 @@ ul li {
 
 ul li p {
     display: inline-block;
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-right: 20px;
 }
 
@@ -52,15 +54,33 @@ ul li p {
     border-radius: 5px;
     width: 20px;
     height: 20px;
-    background-color: rgba(255, 255, 0, 0.712); 
-    text-align: center; 
-    display: flex; 
+    background-color: rgba(255, 255, 0, 0.712);
+    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .arrowButton img {
     object-fit: cover;
-    width: 80%; 
-    height: 80%; 
+    width: 80%;
+    height: 80%;
+}
+
+.minusIconButton, .addIconButton {
+    height: 50px;
+    width: 50px;
+    margin: 12px;
+    border-radius: 50%;
+}
+
+.minusIconButton:hover, .addIconButton:hover {
+    transition-duration: 150ms;
+    background-color: rgb(2, 255, 2);
+}
+
+.minusIconButton img, .addIconButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }

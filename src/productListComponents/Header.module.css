@@ -16,13 +16,13 @@
     margin-left: 20px;
 }
 
-.cartIconButton {
+.iconButton {
     height: 50px;
     width: 50px;
     margin-right: 20px;
 }
 
-.cartIconButton img {
+.iconButton img {
     border-radius: 15px;
     height: 80%;
     width: 80%;
